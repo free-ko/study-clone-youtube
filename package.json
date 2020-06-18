@@ -7,5 +7,16 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/free-ko/Wetube_Challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/free-ko/Wetube_Challenge/issues"
+  },
+  "homepage": "https://github.com/free-ko/Wetube_Challenge#readme"
 }
