@@ -7,4 +7,17 @@ function handleListening() {
     console.log(`Listening on: http://localhost:${PORT}`);
 }
 
+function handleHome(req, res) {
+    res.send('Hi from home!');
+}
+
+function handleProfile(req, res) {
+    res.send("You ar on my frofile");
+}
+
+app.get("/", handleHome); // 함수는 request object, response object을 요청함
+
+app.get("/profile", handleProfile);
+
 app.listen(PORT, handleListening);  // 4000포트를 listen하기 시작할 때 handleListening 함수를 콜백해줘
+
