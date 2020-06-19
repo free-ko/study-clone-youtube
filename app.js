@@ -10,6 +10,7 @@ import routes from "./routes";
 
 const app = express();
 
+app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(bodyParser.json()); // 마찬가지로 json도 이해하기 위해서 유저가 보낸 데이터를
 app.use(
