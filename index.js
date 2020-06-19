@@ -10,7 +10,12 @@ const handleHome = (req, res) => res.send('Hi from home!');
 
 const handleProfile = (req, res) =>  res.send("You ar on my dream");
 
-app.get("/", handleHome); // 함수는 request object, response object을 요청함
+const betweenHome = (req, res, next) => {
+    console.log("I'm between");
+    next();
+};
+
+app.get("/",betweenHome, handleHome); // 함수는 request object, response object을 요청함
 
 app.get("/profile", handleProfile);
 
