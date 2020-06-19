@@ -18,7 +18,7 @@ app.use(
   })
 ); // 유저가 보낸 form에서 받은 데이터를 이해하기위해
 app.use(helmet());
-app.use(morgan("dev")); //나의 첫 middleware임
+app.use(morgan("dev"));
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
