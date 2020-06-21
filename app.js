@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(bodyParser.json()); // 마찬가지로 json도 이해하기 위해서 유저가 보낸 데이터를
 app.use(bodyParser.urlencoded({
   extended: true,
-})); // 유저가 보낸 form에서 받은 데이터를 이해하기위해
+})); // 유저가 보낸(요청) form에서 받은 데이터를 이해하기위해
 app.use(morgan("dev"));
 
 app.use(localsMiddleware);
