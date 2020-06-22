@@ -3,7 +3,7 @@ export const videos = [{
         title: 'Video awesome',
         description: 'This is something I love',
         views: 24,
-        videoFile: "https://www.youtube.com/watch?v=uviU-WPqKng",
+        videoFile: "https://www.youtube.com/embed/uviU-WPqKng",
         creator: {
             id: 144000,
             name: "freeko",
