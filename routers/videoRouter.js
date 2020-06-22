@@ -15,4 +15,4 @@ videoRouter.get(routes.editVideo, editVideo);
 videoRouter.get(routes.deleteVideo, deleteVideo);
 
 
-export default videoRouter; //전체를 export 한다는 의미
+export default videoRouter; 
