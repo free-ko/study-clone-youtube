@@ -1,49 +1,17 @@
-export const videos = [{
-        id: 324393,
-        title: 'Video awesome',
-        description: 'This is something I love',
-        views: 24,
-        videoFile: "https://www.youtube.com/embed/uviU-WPqKng",
-        creator: {
-            id: 144000,
-            name: "freeko",
-            email: "duddn654@naver.com"
-        }
-    },
+import mongoose from "mongoose";
+
+mongoose.connect("mongodb://localhost:27017/wetube", 
     {
-        id: 121212,
-        title: 'Video super',
-        description: 'This is something I love',
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=uviU-WPqKng",
-        creator: {
-            id: 144000,
-            name: "freeko",
-            email: "duddn654@naver.com"
-        }
-    },
-    {
-        id: 55555,
-        title: 'Video nice',
-        description: 'This is something I love',
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=uviU-WPqKng",
-        creator: {
-            id: 144000,
-            name: "freeko",
-            email: "duddn654@naver.com"
-        }
-    },
-    {
-        id: 11111,
-        title: 'Video perfect',
-        description: 'This is something I love',
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=uviU-WPqKng",
-        creator: {
-            id: 144000,
-            name: "freeko",
-            email: "duddn654@naver.com"
-        }
+        useNewUrlParser: true,
+        useFindAndModify: false
     }
-];
+);
+
+//MongoDB와의 연결을 db로 저장함
+const db = mongoose.connection;
+
+const handleOpen = () => console.log("✅ Connected to DB");
+const handleError = (error) => console.log(`❌ Error on DB Connection: ${error}`);
+
+db.once("open", handleOpen);
+db.on("error", handleError);
