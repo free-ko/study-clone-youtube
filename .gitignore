@@ -99,6 +99,12 @@ dist
 # FuseBox cache
 .fusebox/
 
+#package 보안을 위해 
+package-lock.json 
+
+#video를 깃허브에 올리는걸 원하지 않아서
+upload
+
 # DynamoDB Local files
 .dynamodb/
 
@@ -115,8 +121,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-#package 보안을 위해 
-package-lock.json 
-
-#videos
-videos
