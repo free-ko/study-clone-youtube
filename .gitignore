@@ -117,3 +117,6 @@ dist
 
 #package 보안을 위해 
 package-lock.json 
+
+#videos
+videos
