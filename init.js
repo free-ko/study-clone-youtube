@@ -1,8 +1,8 @@
 import "./db";
 import app from "./app"; // 마치 내가 app을 갖고 있듯이
-import dotenv from "dotenv";
 import "./models/Video";
 import "./models/Comment";
+import dotenv from "dotenv";
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
