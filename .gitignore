@@ -105,6 +105,8 @@ package-lock.json
 #video를 깃허브에 올리는걸 원하지 않아서
 upload
 
+static
+
 # DynamoDB Local files
 .dynamodb/
 
