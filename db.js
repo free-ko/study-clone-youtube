@@ -5,6 +5,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useFindAndModify: false,
+  useUnifiedTopology: true,
 });
 
 // MongoDB와의 연결을 db로 저장함
