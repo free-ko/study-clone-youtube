@@ -5,6 +5,7 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import passport from "passport";
+import session from "express-session";
 import { localsMiddleware } from "./middelwares";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
@@ -27,6 +28,13 @@ app.use(
   })
 ); // 유저가 보낸(요청) form에서 받은 데이터를 이해하기위해
 app.use(morgan("dev"));
+app.use(
+  session({
+    secret: process.env.COOKIE_SECRET,
+    resave: true,
+    saveUninitialized: false,
+  })
+);
 app.use(passport.initialize());
 app.use(passport.session());
 
