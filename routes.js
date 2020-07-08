@@ -18,6 +18,11 @@ const VIDEO_DETAIL = "/:id"; // express가 이러한 값을 보면 변하는 값
 const EDIT_VIDEO = "/:id/edit"; // 1번 video를 edit할 수 있도록 즉 각각의 영상을 edit할 수 있도록 하는 거임
 const DELETE_VIDEO = "/:id/delete";
 
+// Github
+
+const GITHUB = "/auth/github";
+const GITHUB_CALLBACK = "/auth/github/callback";
+
 // create object
 const routes = {
   home: HOME,
@@ -58,6 +63,8 @@ const routes = {
       return DELETE_VIDEO;
     }
   },
+  gitHub: GITHUB,
+  githubCallback: GITHUB_CALLBACK,
 };
 
 export default routes;
