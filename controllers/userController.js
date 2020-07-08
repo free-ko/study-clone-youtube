@@ -47,6 +47,7 @@ export const githubLogin = passport.authenticate("github");
 
 export const githubLoginCallback = async (_, __, profile, cb) => {
   const {
+    // eslint-disable-next-line camelcase
     _json: { id, avatar_url, name, email },
   } = profile;
   try {
