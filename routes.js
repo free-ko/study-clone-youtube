@@ -10,6 +10,7 @@ const USERS = "/users";
 const USER_DETAIL = "/:id"; // 이렇게 하면 나중에 /users/1 --> 1번에게 user을 줄 수 있음
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
+const ME = "/me";
 
 // Videos
 const VIDEOS = "/videos";
@@ -65,6 +66,7 @@ const routes = {
   },
   gitHub: GITHUB,
   githubCallback: GITHUB_CALLBACK,
+  me: ME,
 };
 
 export default routes;
