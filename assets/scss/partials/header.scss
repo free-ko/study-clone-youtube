@@ -26,6 +26,9 @@
         color: white;
         font-weight: 600;
         text-transform: uppercase;
+        a {
+          color: white;
+        }
         li:not(:last-child) {
           margin-right: 15px;
         }
