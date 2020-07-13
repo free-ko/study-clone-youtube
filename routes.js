@@ -20,9 +20,12 @@ const EDIT_VIDEO = "/:id/edit"; // 1번 video를 edit할 수 있도록 즉 각�
 const DELETE_VIDEO = "/:id/delete";
 
 // Github
-
 const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
+
+// Facebook
+const FB = "/auth/facebook";
+const FB_CALLBACK = "/auth/facebook/callback";
 
 // create object
 const routes = {
@@ -67,6 +70,8 @@ const routes = {
   gitHub: GITHUB,
   githubCallback: GITHUB_CALLBACK,
   me: ME,
+  facebook: FB,
+  facebookCallback: FB_CALLBACK,
 };
 
 export default routes;
