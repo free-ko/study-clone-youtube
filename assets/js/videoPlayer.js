@@ -96,7 +96,7 @@ function handleDrag(event) {
   // volumen 위치 알아야 되서 event 넣음
   const {
     target: { value },
-  } = event; // 볼륨의 위치를 가지는 변수
+  } = event; // 볼륨의 위치를 가지는 변수(변해도 계속 값을 유지함)
   videoPlayer.volume = value;
   if (value >= 0.6) {
     volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
