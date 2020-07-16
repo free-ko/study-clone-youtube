@@ -78,7 +78,7 @@ function getCurrentTime() {
 }
 
 function setTotalTime() {
-  const totalTimeString = formatDate(videoPlayer.duration);
+  const totalTimeString = formatDate(videoPlayer.duration); // duration 두 시간 사이의 간격을 초나 나노 초단위로 나타냄
   totalTime.innerHTML = totalTimeString;
   setInterval(getCurrentTime, 1000);
 }
