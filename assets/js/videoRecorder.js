@@ -22,9 +22,9 @@ const stopRecording = () => {
 };
 
 const startRecording = () => {
-  videoRecorder = new MediaRecorder(streamObject);
+  videoRecorder = new MediaRecorder(streamObject); // 디폴트로 MediaRecorder는 한번에 모든걸 저장함 즉 전체 파일을 한번에 저장함
   videoRecorder.start();
-  videoRecorder.addEventListener("dataavailable", handleVideoData);
+  videoRecorder.addEventListener("dataavailable", handleVideoData); // detaavailabe 이벤트는 레코딩이 멈췄을 때 호출이 일어남
   recordBtn.addEventListener("click", stopRecording);
 };
 
